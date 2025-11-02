@@ -27,7 +27,7 @@
             <h2>Add New Product</h2>
             
             <form method="POST" action="">
-                <label>Product Name</label>
+                <label>Enter Product Name</label>
                 <input type="text" name="product_name" placeholder="Enter product name" required>
                 
                 <label>Category</label>
