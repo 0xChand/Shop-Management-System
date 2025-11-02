@@ -58,4 +58,3 @@ include("db.php");
 </body>
 </html>
 
-<!-- Changes done by GoraveLohana -->
