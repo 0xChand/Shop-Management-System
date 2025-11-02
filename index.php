@@ -57,3 +57,5 @@ include("db.php");
     </footer>
 </body>
 </html>
+
+<!-- Changes done by GoraveLohana -->
