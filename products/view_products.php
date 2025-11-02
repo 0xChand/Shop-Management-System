@@ -30,7 +30,7 @@ include("../db.php");
             
             <?php if (isset($_GET['msg'])): ?>
                 <div style="color: #e74c3c; margin-bottom: 15px; padding: 10px; background-color: #ffebee; border-left: 3px solid #e74c3c;">
-                    <?php echo htmlspecialchars($_GET['msg']); ?>
+                    <?php echo $_GET['msg']; ?>
                 </div>
             <?php endif; ?>
             

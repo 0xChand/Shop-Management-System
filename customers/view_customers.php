@@ -28,6 +28,12 @@ include("../db.php");
         <div class="card">
             <h2>Customer Management</h2>
             
+            <?php if (isset($_GET['msg'])): ?>
+                <div style="color: #e74c3c; margin-bottom: 15px; padding: 10px; background-color: #ffebee; border-left: 3px solid #e74c3c;">
+                    <?php echo $_GET['msg']; ?>
+                </div>
+            <?php endif; ?>
+            
             <a href="add_customer.php" class="btn" style="margin-bottom: 20px; display: inline-block;">Add New Customer</a>
             
             <table>

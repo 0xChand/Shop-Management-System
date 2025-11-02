@@ -5,9 +5,10 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f7fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #f5f7fa 0%, #e8eaf6 100%);
     color: #333;
+    min-height: 100vh;
 }
 
 .container {
@@ -51,14 +52,21 @@ nav a {
 
 nav a:hover {
     background-color: #34495e;
+    transform: translateX(3px);
+    transition: all 0.2s ease;
 }
 
 .card {
     background-color: white;
     padding: 25px;
     margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .card h2 {
@@ -87,15 +95,19 @@ input[type="date"],
 select,
 textarea {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
     margin-bottom: 15px;
     box-sizing: border-box;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
 }
 
 input:focus, select:focus, textarea:focus {
     outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.1);
 }
 
 button,
@@ -109,13 +121,17 @@ input[type="submit"],
     margin-right: 10px;
     text-decoration: none;
     display: inline-block;
-    border-radius: 4px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
 }
 
 button:hover,
 input[type="submit"]:hover,
 .btn:hover {
-    background-color: #5c6bc0;
+    background-color: #5568d3;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
 }
 
 table {
@@ -123,8 +139,9 @@ table {
     border-collapse: collapse;
     margin-top: 20px;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 8px;
     overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
 }
 
 th, td {
@@ -138,9 +155,12 @@ td {
 }
 
 th {
-    background-color: #667eea;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.5px;
 }
 
 
@@ -159,9 +179,19 @@ th {
     color: white;
 }
 
+.edit-btn:hover {
+    background-color: #38a169;
+    box-shadow: 0 2px 6px rgba(72, 187, 120, 0.3);
+}
+
 .delete-btn {
     background-color: #f56565;
     color: white;
+}
+
+.delete-btn:hover {
+    background-color: #e53e3e;
+    box-shadow: 0 2px 6px rgba(245, 101, 101, 0.3);
 }
 
 footer {
@@ -174,10 +204,11 @@ footer {
 }
 
 .search-form {
-    background-color: #f0f0f0;
+    background: linear-gradient(135deg, #f0f0f0 0%, #ffffff 100%);
     padding: 20px;
     margin-top: 20px;
-    border-radius: 5px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 a:not(.btn):not(nav a):not(.edit-btn):not(.delete-btn) {
