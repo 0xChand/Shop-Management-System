@@ -81,7 +81,7 @@ $customer = mysqli_fetch_assoc($result);
     </div>
     
     <footer>
-        Made by Chand Raj - 2312360 - Section 5G
+        Made by Chand Raj - 2312360 - Section 5G h
     </footer>
 </body>
 </html>
