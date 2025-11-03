@@ -89,7 +89,7 @@ if (isset($_POST['sell'])) {
                     $prod = mysqli_query($conn, "SELECT * FROM products WHERE stock > 0");
                     if ($prod) {
                         while ($row = mysqli_fetch_assoc($prod)) {
-                            echo "<option value='{$row['product_id']}'> {$row['product_name']} (Stock: {$row['stock']})</option>";
+                            echo "<option value='{$row['product_id']}'> {$row['product_name']} (Stock: {$row['stock']}) </option>";
                         }
                     }
                     ?>

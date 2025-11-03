@@ -70,8 +70,7 @@ $customer = mysqli_fetch_assoc($result);
                                    WHERE customer_id=$id";
 
                     if (mysqli_query($conn, $update_sql)) {
-                        echo "<p style='margin-top: 15px;'>Customer Updated Successfully!</p>";
-                        echo "<meta http-equiv='refresh' content='1.5;url=view_customers.php'>";
+                        header("Location: view_customers.php?msg=Customer updated successfully");
                     } else {
                         echo "<p style='margin-top: 15px;'>Error updating record: " . mysqli_error($conn) . "</p>";
                     }
